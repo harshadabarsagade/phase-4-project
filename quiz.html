@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Quiz App</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <h2 id="question">Enter topic and start quiz</h2>
+
+  <input type="text" id="topic" placeholder="Enter topic (e.g. JavaScript)" />
+
+  <button onclick="startQuiz()">Start Quiz</button>
+
+  <div id="options"></div>
+
+  <button onclick="nextQuestion()">Next</button>
+
+  <h3 id="score"></h3>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

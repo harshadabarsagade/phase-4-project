@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aesthetic AI Joke Generator</title>
+  <link rel="stylesheet" href="joke.css">
+</head>
+<body>
+
+<!-- <div class="blob pink"></div>
+<div class="blob purple"></div>
+<div class="blob blue"></div> -->
+
+<button class="dark-btn" onclick="toggleDark()">🌙</button>
+
+<div class="container">
+
+  <!-- PIN PAGE -->
+  <div class="card active" id="pinPage">
+    <h1>✨ AI Joke Studio</h1>
+    <p id="key">Enter aesthetic access key</p>
+    <input id="pin" placeholder="Enter your password" maxlength="4">
+    <button onclick="unlock()">Unlock ✨</button>
+    <span id="error"></span>
+  </div>
+
+  <!-- JOKE PAGE -->
+  <div class="card" id="jokePage">
+    <h1>😂 Mood Booster</h1>
+
+    <select id="type">
+      <option id="soft" value="soft">Soft Funny 🌸</option>
+      <option value="desi">Desi Vibes 🇮🇳</option>
+      <option value="savage">Savage 😏</option>
+      <option value="tech">Tech 🤓</option>
+    </select>
+
+    <button id="magicbtn" onclick="generate()">Generate Magic ✨</button>
+
+    <div class="joke-box" id="jokeBox">
+      Click generate and melt 🫠
+    </div>
+
+    <div class="actions">
+      <button onclick="copyJoke()">📋</button>
+      <button onclick="speakJoke()">🔊</button>
+      <button onclick="clearJoke()">🧹</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="joke.js"></script>
+</body>
+</html>

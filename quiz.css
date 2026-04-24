@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+  background: #252949;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  /* background-image: url("https://img.freepik.com/free-photo/abstract-blur-empty-green-gradient-studio-well-use-as-backgroundwebsite-templateframebusiness-report_1258-57683.jpg?semt=ais_hybrid&w=740&q=80"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quiz-container {
+  background: rgb(65, 21, 4);
+  padding: 20px;
+  width: 700px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+
+}
+
+input {
+  width: 680px;
+  padding: 6px;
+  margin-bottom: 10px;
+ 
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.option {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.option:hover {
+  background: #ddd;
+}
+
+
+#question{
+  color: #ddd;
+}

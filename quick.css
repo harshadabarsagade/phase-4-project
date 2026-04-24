@@ -1,0 +1,141 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #061E29, #1D546D);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* MAIN WRAPPER CARD */
+.container {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(95, 149, 152, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(243, 244, 244, 0.2);
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  color: #F3F4F4;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* TEXTAREA */
+textarea {
+  width: 700px;
+  height: 180px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #5F9598;
+  outline: none;
+  resize: none;
+  font-size: 15px;
+  margin-bottom: 15px;
+
+  background: #92e9e9;
+  color: #061E29;
+  transition: 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #1D546D;
+  box-shadow: 0 0 12px rgba(29, 84, 109, 0.6);
+}
+
+textarea::placeholder {
+  color: #1D546D;
+  opacity: 0.7;
+}
+
+/* BUTTON */
+button {
+  width: 100;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1D546D, #061E29);
+  color: #F3F4F4;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5F9598, #1D546D);
+  transform: scale(1.03);
+}
+
+/* SUB TITLE */
+h2 {
+  color: #F3F4F4;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+/* OUTPUT BOX */
+#summaryOutput {
+  width: 700px;
+  height: 200px;
+  min-height: 120px;
+  padding: 15px;
+  border-radius: 12px;
+
+  background: #9aeaea;
+  border-left: 6px solid #1D546D;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #061E29;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+
+/* Paste/Input area background wrapper */
+.paste-box {
+  background: rgba(243, 244, 244, 0.08);
+  padding: 15px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(95, 149, 152, 0.3);
+}
+
+/* Summary output wrapper background */
+.summary-box {
+  background: rgba(243, 244, 244, 0.08);
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(95, 149, 152, 0.3);
+}

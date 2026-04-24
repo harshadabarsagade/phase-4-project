@@ -1,0 +1,107 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center everything */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.freepik.com/premium-photo/blue-sky-with-plane-flying-background_1030736-38436.jpg?w=360");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Container (vertical layout) */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    color: #222;
+}
+
+/* Input */
+input {
+    width: 400px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+
+    background-color: #222222 !important;
+    color: #ffffff !important;   /* 👈 MOST IMPORTANT */
+    caret-color: #ffffff;        /* 👈 cursor visible */
+}
+
+
+input::placeholder {
+    color: white;    
+}
+
+/* Input focus */
+input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 8px rgba(99,102,241,0.3);
+}
+
+/* Button */
+button {
+    width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #6366f1;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(99,102,241,0.4);
+}
+
+/* Square Output Box */
+#ideaOutput {
+    width: 800px;
+    height: 400px; /* square */
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #ddddddd8;
+    background-color: #222222df;
+    color: white;
+
+    overflow-y: auto; /* scroll */
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    line-height: 1.5;
+
+    white-space: pre-line;
+}
+
+/* Scrollbar */
+#ideaOutput::-webkit-scrollbar {
+    width: 6px;
+}
+#ideaOutput::-webkit-scrollbar-thumb {
+    background: #dcdce8;
+    border-radius: 10px;
+}
