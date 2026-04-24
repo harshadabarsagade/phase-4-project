@@ -1,0 +1,111 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+
+    background-image: url("https://img.freepik.com/free-photo/pink-flowers-pink_24837-301.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* DARK OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(221, 227, 227, 0);
+    z-index: -1;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 42px;
+    text-shadow: 0 0 15px rgb(15, 36, 36);
+    animation: glow 2s infinite alternate;
+    color: black;
+}
+
+/* glow animation */
+@keyframes glow {
+    from { text-shadow: 0 0 10px rgb(13, 71, 208); }
+    to { text-shadow: 0 0 25px #00ffe5; }
+}
+
+/* ===== LINKS AS CARDS ===== */
+a {
+    display: block;
+    width: 320px;
+    margin: 12px auto;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(111, 93, 139);
+
+
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+}
+
+/* hover effect */
+a:hover {
+    transform: scale(1.02);
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 25px cyan;
+    letter-spacing: 1px;
+}
+
+/* ===== FLOATING EMOJIS (if JS used) ===== */
+.emoji {
+    position: absolute;
+    font-size: 22px;
+    animation: floatUp linear infinite;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+/* animation */
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    a {
+        width: 85%;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
