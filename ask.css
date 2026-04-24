@@ -1,0 +1,84 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Dark background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gI4Nhb1pwGI-5HxDprIO9xqqNEBCUqPkIA&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Container */
+.container {
+    width: 600px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    background-image: url("https://img.freepik.com/free-photo/plain-smooth-green-wall-texture_53876-129746.jpg?semt=ais_hybrid&w=740&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+/* BIG SQUARE ANSWER BOX */
+#answer {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    overflow-y: auto;
+    text-align: left;
+}

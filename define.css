@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body layout (NO background color) */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/072/285/237/small/a-long-bright-library-hallway-with-rows-of-books-lining-one-side-large-windows-on-the-other-allow-sunlight-to-stream-in-creating-a-soft-blurred-focus-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #222;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Input */
+input {
+    width: 900px;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: rgba(18, 22, 27, 0.656);
+    color: white;
+
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #5b6578;
+    box-shadow: 0 0 10px rgba(133, 177, 249, 0.3);
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: rgb(90, 111, 247);
+    color: black;
+    transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(59,130,246,0.4);
+}
+
+/* Definition Box */
+#definitionOutput {
+    margin-top: 25px;
+    width: 600px;
+    min-height: 400px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    background-color: #222222b3;
+    color: white;
+    
+
+    /* Glass feel without bg color */
+    backdrop-filter: blur(8px);
+
+    /* Shadow for premium look */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+
+    /* Smooth appearance */
+    transition: 0.3s;
+}
+
+/* Hover effect on result */
+#definitionOutput:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
